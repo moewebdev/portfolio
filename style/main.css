@@ -1,0 +1,434 @@
+*,
+*:before,
+*:after{
+    box-sizing: border-box; 
+}
+
+html { 
+    font-size: 62.5%;
+}
+
+html,body{
+    max-width: 1440px;
+    min-width: 350px; 
+}
+
+body{
+    font-family: 'Lato', helvetica, sans-serif; 
+    font-size: 1.8rem; 
+    line-height: 1.5; 
+    color: #333; 
+    margin: 0; 
+}
+  
+header{
+    padding: 2% 0 2% 2%; 
+    position: fixed; 
+    width: 100%; 
+}
+
+main{
+    width: 66%; 
+    float: right; 
+    position: relative; 
+}
+
+aside,
+main{
+    top: 133px; 
+    position: relative; 
+}
+
+section{
+    width: 94%; 
+    right: 0; 
+    top: 170px;   
+    left: 0; 
+    margin: auto; 
+}
+
+aside{
+    width: 34%; 
+    float: left;
+    padding-left: 2%; 
+    position: fixed;
+}
+
+#about h1,
+#contact h1,
+#portfolio h1{
+    text-align: center; 
+    font-size: 3.6rem; 
+    margin: 0;  
+}
+
+#about h1,
+#contact h1,
+#portfolio h1{ 
+    margin-bottom: 2%; 
+}
+
+/*******************
+nav start
+********************/
+nav{
+    font-size: 2.4rem; 
+}
+
+#slide-out-nav{
+    display: none; 
+}
+
+#slide-out-nav ul li{
+    margin-top: 2.4rem; 
+}
+
+nav ul{
+    list-style: none; 
+    margin: 0; 
+    padding: 0; 
+}
+
+nav ul li{
+    margin-bottom: 2.4rem; 
+}
+
+a,
+nav a,
+.portfolio-btns a{
+    text-decoration: none; 
+    color: #333; 
+}
+
+nav a:hover{
+    border-bottom: 4px solid #6dd5fa; 
+    cursor: pointer;
+}
+/*******************
+hamburger nav start
+********************/
+#menu-icon{
+    width: 35px; 
+    height: 39px; 
+    top: 0; 
+    right: 3.5%;
+    bottom: 0; 
+    margin: auto;
+    position: absolute; 
+    display: none; 
+}
+
+.bar1, .bar2, .bar3{
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+  
+.change .bar2 {opacity: 0;}
+  
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+/***************
+INDEX SECTION 
+****************/ 
+#index{  
+    background-image: url("../images/matt-hardy-6ArTTluciuA-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% auto; 
+    height: 100%; 
+}
+
+#index .content{
+    padding: 5%;
+}
+
+#index p{
+    margin:0; 
+    color: white; 
+    font-size: 4.8rem; 
+}
+
+.conversion-btn-container{
+    margin-top: 4.5%; 
+}
+
+.conversion-btn-container a{
+    margin-right: 1.5rem; 
+    padding: 1rem 1.5rem 1rem 1.5rem; 
+    color: white; 
+    background-color: #6dd5fa; 
+    text-decoration: none;
+}
+/***************
+ABOUT SECTION 
+****************/ 
+#about p{
+    margin: 0; 
+}
+
+#about-text{
+    padding-right: 2.5%; 
+    padding-left: 2.5%; 
+    margin-top: 18px; 
+}
+
+#profile-picture-container{
+    width: 40%;    
+    margin: 0 auto; 
+}
+
+#profile-picture-container img{
+    max-width: 100%;
+    height: auto;
+}
+/***************
+PORTFOLIO SECTION 
+****************/ 
+#clear{
+    clear: both; 
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+} 
+
+.portfolio-box{
+    width: 381px;
+    height: 250px; 
+    position: relative; 
+}
+
+.portfolio-box:hover::after{
+    content: "";   
+    top: 0; 
+    right: 0; 
+    bottom: 0; 
+    left: 0; 
+    position: absolute; 
+    background-color: rgba(0,0,0,.4); 
+    cursor: pointer;
+    height: 184px; 
+}
+
+.portfolio-links,
+.portfolio-box:nth-of-type(1),
+.portfolio-box:nth-of-type(3){
+   margin-right: 5%; 
+}
+
+.tooTired{
+    margin-right: 5%;
+}
+
+.portfolio-btns{
+    bottom: -16%; 
+    position: absolute; 
+}
+
+.portfolio-btns a{ 
+    color: white; 
+    background-color: #6dd5fa; 
+    padding: 5px 10px 5px 10px; 
+}
+/***************
+CONTACT SECTION 
+****************/ 
+#contact p{
+    font-size: 1.8rem; 
+}
+
+.foo{
+    width: 90%;
+    margin: 0 auto; 
+    position: relative;
+}
+
+#foo-left{  
+    width: 50%;
+    float: left; 
+}
+
+#foo-left h2:nth-of-type(1){
+    margin-top: 0; 
+}
+
+.social-icon{
+    position: relative;
+}
+
+.social-icon img{
+    width: 2.5rem;
+    height: 2.5rem;
+    top: 0px;
+    left: .5rem;
+    position: absolute;
+}
+
+#foo-left p:nth-of-type(3) .social-icon img{
+    width:2.3rem;
+    height:2.3rem;
+    left: 2.3rem;
+}
+
+#foo-left h2:nth-of-type(3){
+    margin-top: 0; 
+}
+
+#foo-right{
+    width: 50%; 
+    float: right; 
+}
+
+.bar{
+    width: 97%;  
+    top: 112px; 
+    right: 0;
+}
+
+.bar img{
+    max-width: 100%;
+    height: auto; 
+}
+
+footer{
+    width: 100%;
+    background-color: #333; 
+    color: white;
+    clear: right; 
+    bottom: 0px; 
+    position: absolute; 
+    border: 2px solid black; 
+    font-size: 10px; 
+    border: 2px solid black;   
+}
+
+/***************
+MEDIA SECTION 
+****************/ 
+@media only screen and (max-width: 1302px){
+    html{
+        font-size: 46.875%; 
+    }
+
+    #logo{
+        width: 288px; 
+        height: 78px; 
+    }
+
+    .row{
+        display: block; 
+        width: 381px; 
+        margin: 0 auto; 
+    }
+
+    .row:nth-of-type(2){
+        top: 0px; 
+        position: relative;
+    }   
+}
+
+@media only screen and (max-width: 982px){
+    html{
+        /*body font size at 16px */ 
+        font-size: 41.25%; 
+    }
+
+    #logo{
+        width: 253px;
+        height: 69px; 
+    }
+}
+
+@media only screen and (max-width: 900px){
+    header{
+        width: 100%; 
+        height: 69px;
+        padding-top: 0; 
+        padding-left: 0; 
+        padding-right: 0;  
+        position: relative; 
+    }
+
+    nav{
+        display: none;
+    }
+
+    #slide-out-nav a{
+        color: white;
+    }
+    
+    main{
+        width: 100%;  
+    }
+
+    aside,
+    main{
+        top: 1%; 
+    }
+    
+    #logo{
+        /*margin: 0 auto; */ 
+        display: block;  
+        top: 3.5%; 
+        left: 3.5%;
+        position: absolute;  
+    }
+
+    #index{
+        background-size: cover; 
+        /*height: 95%;*/ 
+    }
+
+    #menu-icon{
+        display: inline-block;
+    }
+   
+    #slide-out-nav{
+        text-align: center; 
+        width: 33%; 
+        background-color: rgba(0,0,0,0.8); 
+        top: 67px; 
+        right: 3%; 
+        position: absolute; 
+        z-index: 1;
+        display: none; 
+    }
+}
+
+@media only screen and (max-width: 760px){
+    /*html{
+        font-size: 31.25%; 
+    }*/ 
+
+    .conversion-btn{
+        font-size: 16px; 
+    }
+} 
+
+@media only screen and (max-width: 668px){ 
+    header,
+    main{
+        float: none; 
+    }
+
+    nav{
+        text-align: center; 
+    }
+  
+    main{
+        width: 100%; 
+        margin: 0 auto; 
+    }   
+}

@@ -1,0 +1,297 @@
+*,
+*:before,
+*:after{
+    box-sizing: border-box; 
+}
+
+html { 
+    font-size: 62.5%;
+}
+
+html,body{
+    max-width: 1440px;
+      
+}
+
+body{
+    font-family: 'Lato', sans-serif; 
+    font-size: 1.8rem; 
+    line-height: 1.5; 
+    color: #333; 
+    margin: 0; 
+}
+  
+header{
+    padding: 2% 0 2% 2%; 
+    position: fixed; 
+    width: 100%; 
+}
+
+aside,
+main{
+    top: 133px; 
+    position: relative; 
+}
+
+aside{
+    width: 34%; 
+    float: left;
+    padding-left: 2%; 
+    position: fixed;
+    z-index: 1; 
+}
+
+/*******************
+basic nav start
+********************/
+nav{
+    font-size: 2.4rem; 
+}
+
+#slide-out-nav{
+    display: none; 
+}
+
+nav ul{
+    list-style: none; 
+    margin: 0; 
+    padding: 0; 
+}
+
+nav ul li{
+    margin-bottom: 24px; 
+}
+
+nav a,
+.portfolio-btns a{
+    text-decoration: none; 
+    color: #333; 
+}
+
+nav a:hover{
+    border-bottom: 4px solid #6dd5fa; 
+    cursor: pointer;
+}
+/*******************
+basic nav end
+********************/
+
+/*******************
+hamburger nav start
+********************/
+#menu-icon{
+    width: 35px; 
+    height: 39px; 
+    top: 0; 
+    right: 3.5%;
+    bottom: 0; 
+    margin: auto;
+    position: absolute; 
+    display: none; 
+}
+
+.bar1, .bar2, .bar3{
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+  
+.change .bar2 {opacity: 0;}
+  
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+/*****************
+hamburger nav end
+******************/
+    
+main{
+    width: 100%; 
+    position: relative; 
+}
+
+#index{
+    width: 66%; 
+    position:relative; 
+    left: 34%;  
+}
+
+/***************
+INDEX SECTION 
+****************/ 
+
+
+#index img{
+    max-width: 100%; 
+    height: auto; 
+}
+
+#index .content{
+    padding: 5%;
+}
+
+#index h1{
+    font-size: 3.6rem; 
+    margin: 2% 0%; 
+}
+
+#index p{
+    margin:0; 
+    font-size: 1.8rem; 
+    /*font-size: 4.8rem; */ 
+}
+
+.project-img-container{
+    width: 92%; 
+    margin: 0 auto; 
+    
+}
+
+#back-arrow{
+    color: black; 
+    text-decoration: none; 
+    margin-top: 9px; 
+    display: block; 
+}
+
+#back-arrow:hover{
+    color: #6dd5fa;
+}
+
+.portfolio-btns{
+    display: flex;
+    justify-content: center;
+    margin: 2% auto 0%;  
+}
+
+.portfolio-btns a{ 
+    color: white; 
+    background-color: #6dd5fa; 
+    padding: .5rem 1rem .5rem 1rem; 
+    margin-right: .5rem;
+}
+
+#admin-screenshot{
+    margin-top: 18px; 
+    border: 1px solid #333; 
+}
+/***************
+MEDIA SECTION 
+****************/ 
+
+@media only screen and (max-width: 1302px){
+    html{
+        font-size: 46.875%; 
+    }
+
+    #logo{
+        width: 288px; 
+        height: 78px; 
+    }
+}
+
+@media only screen and (max-width: 982px){
+    html{
+        /*body font size at 16px */ 
+        font-size: 41.25%; 
+    }
+
+    #logo{
+        width: 253px;
+        height: 69px; 
+    }
+
+   
+}
+
+@media only screen and (max-width: 900px){
+    aside,
+    main{
+        top: 1%; 
+    }
+    
+    #index{
+        left: 0; 
+        margin: 0;
+        width: 100%;
+    }
+   
+    
+    header{
+        width: 100%; 
+        height: 69px;
+        padding-top: 0; 
+        padding-left: 0; 
+        padding-right: 0;  
+        position: relative; 
+    }
+
+    #logo{
+        display: block;  
+        top: 3.5%; 
+        left: 3.5%;
+        position: absolute;  
+    }
+
+    #menu-icon{
+        display: inline-block;
+    }
+   
+    #slide-out-nav{
+        text-align: center; 
+        width: 33%; 
+        background-color: rgba(0,0,0,0.8); 
+        top: 89px; 
+        right: 3%; 
+        position: absolute; 
+        z-index: 1;
+        display: none; 
+    }
+
+
+    nav{
+        display: none;
+    }
+
+    nav a{
+        color: white; 
+    }
+
+    /*main{
+        width: 100%; 
+        height: 100%; 
+    }*/ 
+
+ 
+    
+}
+
+@media only screen and (max-width: 760px){
+    .conversion-btn{
+        font-size: 16px; 
+    }
+} 
+
+@media only screen and (max-width: 668px){  
+    header,
+    main{
+        float: none; 
+    }
+
+    nav{
+        text-align: center; 
+    }
+  
+    main{
+        width: 100%; 
+        margin: 0 auto; 
+    }   
+}
