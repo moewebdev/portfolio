@@ -309,6 +309,20 @@ footer{
 /***************
 MEDIA SECTION 
 ****************/ 
+@media screen and (min-width: 1440px){
+    body,html{
+        margin: 0 auto; 
+    }
+
+    .home-arrow{
+        display: none; 
+    }
+}
+
+
+
+
+
 @media only screen and (max-width: 1302px){
     html{
         font-size: 46.875%; 
